@@ -226,12 +226,12 @@ module.exports = async ({
 		args: [account, addressOf(readProxyForResolver)],
 	});
 
-	const exchanger = await deployer.deployContract({
-		name: 'Exchanger',
-		source: useOvm ? 'Exchanger' : 'ExchangerWithFeeRecAlternatives',
-		deps: ['AddressResolver'],
-		args: [account, addressOf(readProxyForResolver)],
-	});
+	// const exchanger = await deployer.deployContract({
+	// 	name: 'Exchanger',
+	// 	source: useOvm ? 'Exchanger' : 'ExchangerWithFeeRecAlternatives',
+	// 	deps: ['AddressResolver'],
+	// 	args: [account, addressOf(readProxyForResolver)],
+	// });
 
 	await deployer.deployContract({
 		name: 'CircuitBreaker',
@@ -251,11 +251,11 @@ module.exports = async ({
 		name: 'VirtualSynthMastercopy',
 	});
 
-	await deployer.deployContract({
-		name: 'ExchangeState',
-		deps: ['Exchanger'],
-		args: [account, addressOf(exchanger)],
-	});
+	// await deployer.deployContract({
+	// 	name: 'ExchangeState',
+	// 	deps: ['Exchanger'],
+	// 	args: [account, addressOf(exchanger)],
+	// });
 
 	await deployer.deployContract({
 		name: 'Issuer',
