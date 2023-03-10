@@ -263,11 +263,11 @@ module.exports = async ({
 		args: [account, addressOf(readProxyForResolver)],
 	});
 
-	await deployer.deployContract({
-		name: 'TradingRewards',
-		deps: ['AddressResolver', 'Exchanger'],
-		args: [account, account, addressOf(readProxyForResolver)],
-	});
+	// await deployer.deployContract({
+	// 	name: 'TradingRewards',
+	// 	deps: ['AddressResolver', 'Exchanger'],
+	// 	args: [account, account, addressOf(readProxyForResolver)],
+	// });
 
 	await deployer.deployContract({
 		name: 'SupplySchedule',
