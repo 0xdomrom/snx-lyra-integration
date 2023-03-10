@@ -279,7 +279,6 @@ contract FuturesMarketManager is Owned, MixinResolver, IFuturesMarketManager {
      */
     function _addMarket(address market, bool isProxied) internal onlyOwner {
         require(!_allMarkets.contains(market), "Market already exists");
-
         bytes32 key = IMarketViews(market).marketKey();
         bytes32 baseAsset = IMarketViews(market).baseAsset();
 

@@ -54,3 +54,5 @@ slither.sarif
 # cannon build files
 cannon/
 deployments/
+
+node_modules
