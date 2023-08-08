@@ -52,7 +52,7 @@
 		"build/ast",
 		"contracts/**/*.sol",
 		"publish",
-		"test/integration"
+		"test"
 	],
 	"bin": {
 		"snx": "bin.js"
