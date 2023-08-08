@@ -51,12 +51,8 @@
 		"bin.js",
 		"build/ast",
 		"contracts/**/*.sol",
-		"publish/*.json",
-		"publish/deployed/mainnet/*",
-		"publish/deployed/mainnet-ovm/*",
-		"publish/deployed/goerli/*",
-		"publish/deployed/goerli-ovm/*",
-		"publish/deployed/local-ovm/*"
+		"publish",
+		"test/integration"
 	],
 	"bin": {
 		"snx": "bin.js"
